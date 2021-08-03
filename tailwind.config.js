@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'dark': '#020206',
+                'dark': '#16161e',
             },
             backgroundImage: theme => ({
                 'header-img': "url('/images/gradient-bg.svg')",
