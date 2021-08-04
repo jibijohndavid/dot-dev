@@ -8,7 +8,8 @@ module.exports = {
             },
             backgroundImage: theme => ({
                 'header-img': "url('/images/gradient-bg.svg')",
-            })
+            }),
+            b
         }
     },
     variants: {
