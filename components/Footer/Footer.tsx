@@ -2,7 +2,7 @@ import UIContainer from "../Layout/UIContainer";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-8">
+    <footer className="w-full py-8 bg-darker">
       <UIContainer>
         <ul className="max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-between">
           <li className="my-2">
@@ -116,7 +116,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="text-center text-gray-600 pt-10 sm:pt-12 font-light flex items-center justify-center">
-          Copyright © 2022 Jibi John David
+          © 2022 Jibi John David
         </div>
       </UIContainer>
     </footer>

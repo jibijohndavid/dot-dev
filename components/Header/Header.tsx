@@ -14,7 +14,7 @@ const Title = ({ value, valueInColor }: TitleProps) => (
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-center h-80 bg-dark bg-header-img bg-left">
+    <header className="flex items-center justify-center h-96 bg-dark bg-header-img bg-left">
       <section className="mt-32">
         <Title value="Hello 👋, I'm" valueInColor="Jibi John David." />
         <Title
