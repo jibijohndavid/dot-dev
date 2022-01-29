@@ -1,44 +1,31 @@
-import Image from "next/image";
-
-type BlogTagProps = {
-  title: string;
-};
-
-const BlogTag = ({ title }: BlogTagProps) => (
-  <div className="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-indigo-100 rounded-2xl">
-    {`#${title}`}
-  </div>
-);
+import Link from "next/link";
 
 const BlogCard = () => {
   return (
-    <div className="overflow-hidden shadow-lg rounded-lg h-90  cursor-pointer m-auto">
-      <a href="#" className="w-full block h-full">
-        <Image
-          src="/images/blog-placeholder.jpg"
-          alt="blog photo"
-          className="object-cover"
-          height={200}
-          width={400}
-        ></Image>
-        <div className="bg-white w-full p-4">
-          <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
-            I started writing blogs
-          </p>
-          <p className="text-gray-400 dark:text-gray-300 font-light text-md max-h-32 overflow-hidden">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut rem
-            aliquam iste deleniti sapiente aperiam, suscipit sequi recusandae
-            earum incidunt nulla reiciendis ullam dolorem commodi neque alias
-            quisquam? Ad, dolorum. A aperiam veritatis cumque culpa. Adipisci
-            tenetur at ea fugiat et aperiam rem, minus, quos debitis error
-            dolores beatae reprehenderit possimus consequatur.
-          </p>
-          <div className="flex flex-wrap justify-starts items-center mt-4">
-            <BlogTag title="javascript" />
-            <BlogTag title="react" />
-          </div>
-        </div>
-      </a>
+    <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 bg-gray-200">
+      <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
+        30 Jan 2022
+      </p>
+      <Link
+        href="#"
+        aria-label="Read article: Hello Internet: So I started writing."
+      >
+        <a
+          className="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-indigo-500"
+          title="Hello Internet: So I started writing."
+        >
+          Hello Internet: So I started writing.
+        </a>
+      </Link>
+      <p className="max-w-xs mx-auto mb-2 text-gray-700">
+        Yes I know, I&apos;m late. But hey &ldquo;It&apos;s never too late to be
+        what you might have been.&rdquo;
+      </p>
+      <Link href="#" aria-label="Read article">
+        <a className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-600 hover:text-indigo-400">
+          Continue reading
+        </a>
+      </Link>
     </div>
   );
 };
