@@ -2,6 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import UIContainer from "../Layout/UIContainer";
 
+const skills = [
+  "React",
+  "React Native",
+  "NextJS",
+  "ES6+",
+  "Typescript",
+  "Node",
+  "Express",
+  "PostgreSQL",
+  "MongoDB",
+];
+
+const Tag = ({ title }: { title: string }) => (
+  <span className="mr-4 mb-4 px-2 py-1 text-base rounded text-white  bg-purple-600 font-medium opacity-80">
+    {title}
+  </span>
+);
+
 const AboutMe = () => {
   return (
     <section>
@@ -9,9 +27,9 @@ const AboutMe = () => {
         <div className="container py-20 mx-auto">
           <div className="items-center lg:flex">
             <div className="lg:w-2/3">
-              <h2 className="text-3xl font-bold text-indigo-400">Who I am</h2>
-              <p className="mt-4 text-gray-500 lg:max-w-xl">
-                Hi I am Jibi John David, a passionate&nbsp;
+              <h2 className="text-3xl font-bold text-indigo-400">About me</h2>
+              <p className="my-4 text-gray-500 lg:max-w-xl">
+                I am Jibi John David, a passionate&nbsp;
                 <span className="font-bold text-indigo-400">
                   Software Engineer&nbsp;
                 </span>
@@ -34,6 +52,12 @@ const AboutMe = () => {
                   features.
                 </p>
               </p>
+
+              <div className="mt-8 lg:max-w-xl flex flex-wrap">
+                {skills.map((skill) => (
+                  <Tag key={skill} title={skill} />
+                ))}
+              </div>
             </div>
 
             <div className="mt-8 lg:mt-0 lg:w-1/3">
