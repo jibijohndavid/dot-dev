@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section>
       <UIContainer>
-        <div className="container px-6 py-20 mx-auto">
+        <div className="container py-20 mx-auto">
           <div className="items-center lg:flex">
             <div className="lg:w-2/3">
               <h2 className="text-3xl font-bold text-indigo-400">Who I am</h2>
