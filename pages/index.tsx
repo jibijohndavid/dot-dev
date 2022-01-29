@@ -1,13 +1,14 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 
 export default function Home() {
   return (
     <>
+      <Nav />
       <Header />
-      <div className="-mt-10">
-        <Nav />
-      </div>
+      <div>Body goes here</div>
+      <Footer />
     </>
   );
 }
