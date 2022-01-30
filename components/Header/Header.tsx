@@ -22,7 +22,7 @@ const Header = ({ title, disableHero = false }: HeaderProps) => {
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               {disableHero ? null : (
                 <span className="text-base text-gray-300 sm:text-lg md:text-xl font-normal">
-                  👋 Hello, I a&apos;m
+                  👋 Hello, I am
                 </span>
               )}
 
