@@ -5,9 +5,10 @@ import UIContainer from "../Layout/UIContainer";
 const skills = [
   "React",
   "React Native",
-  "NextJS",
+  "NextJs",
+  "Electron",
   "Typescript",
-  "NodeJS",
+  "Node",
   "Express",
   "PostgreSQL",
   "MongoDB",
@@ -15,7 +16,7 @@ const skills = [
 ];
 
 const Tag = ({ title }: { title: string }) => (
-  <span className="mr-4 mb-4 px-2 py-1 text-base rounded text-gray-200  bg-purple-900 font-medium">
+  <span className="mr-4 mb-4 px-2 py-1 text-sm rounded text-gray-200 bg-purple-900 font-medium">
     {title}
   </span>
 );
@@ -52,7 +53,7 @@ const AboutMe = () => {
                 </p>
               </div>
 
-              <div className="mt-8 lg:max-w-xl flex flex-wrap">
+              <div className="mt-10 lg:max-w-xl flex flex-wrap">
                 {skills.map((skill) => (
                   <Tag key={skill} title={skill} />
                 ))}
