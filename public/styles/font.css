@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "beyno";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/BEYNO.woff") format("woff");
+}

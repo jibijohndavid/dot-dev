@@ -11,6 +11,12 @@ module.exports = {
       backgroundImage: (theme) => ({
         "header-img": "url('/images/gradient-bg.svg')",
       }),
+      fontFamily: {
+        beyno: "beyno",
+      },
+    },
+    fontFamily: {
+      sans: ["Nunito", "sans-serif"],
     },
   },
   variants: {

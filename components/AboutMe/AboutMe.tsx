@@ -28,7 +28,7 @@ const AboutMe = () => {
         <div className="container my-10 md:my-24 mx-auto">
           <div className="items-center lg:flex">
             <div className="lg:w-2/3">
-              <h2 className="text-2xl font-bold text-purple-500 md:text-3xl">
+              <h2 className="text-2xl font-bold text-purple-500 md:text-3xl font-beyno">
                 About me
               </h2>
               <div className="my-4 text-base text-gray-400 lg:max-w-2xl md:text-lg">

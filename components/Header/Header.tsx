@@ -13,7 +13,7 @@ const Header = ({ title, disableHero = false }: HeaderProps) => {
   return (
     <header
       className={`flex items-center ${
-        !disableHero && "h-72 md:h-96"
+        !disableHero && "h-96"
       }  bg-purple-dark bg-header-img bg-left`}
     >
       <UIContainer className="w-full">
@@ -26,13 +26,20 @@ const Header = ({ title, disableHero = false }: HeaderProps) => {
                 </span>
               )}
 
-              <span className="block text-white">{title}</span>
+              <span className="block text-white font-beyno tracking-widest">
+                {title}
+              </span>
             </h1>
             {disableHero ? null : (
               <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Passionate Javascript Engineer based in C-53 and I love to share
-                and collaborate. I am looking for creative minds to work, grow
-                and network. Feel free to contact me.
+                Passionate Javascript Engineer based in
+                <Link href="https://marvelcinematicuniverse.fandom.com/wiki/Earth">
+                  <a rel="noreferrer" target="_blank" className="font-bold">
+                    &nbsp;C-53<span className="text-xs">🔗 </span>
+                  </a>
+                </Link>
+                and I love to share and collaborate. I am looking for creative
+                minds to work, grow and network. Feel free to contact me.
               </p>
             )}
           </div>
