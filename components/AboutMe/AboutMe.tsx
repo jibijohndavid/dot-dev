@@ -15,7 +15,7 @@ const skills = [
 ];
 
 const Tag = ({ title }: { title: string }) => (
-  <span className="mr-4 mb-4 px-2 py-1 text-base rounded text-white  bg-purple-600 font-medium opacity-70">
+  <span className="mr-4 mb-4 px-2 py-1 text-base rounded text-gray-200  bg-purple-900 font-medium">
     {title}
   </span>
 );
@@ -24,18 +24,16 @@ const AboutMe = () => {
   return (
     <section>
       <UIContainer>
-        <div className="container my-10 md:my-20 mx-auto">
+        <div className="container my-10 md:my-24 mx-auto">
           <div className="items-center lg:flex">
             <div className="lg:w-2/3">
-              <h2 className="text-2xl font-bold text-purple-400">About me</h2>
-              <div className="my-4 text-base text-gray-500 lg:max-w-2xl">
-                My name is <strong>Jibi John David</strong>. I am a
-                passionate&nbsp;
-                <strong className="font-bold text-purple-400">
-                  Software Engineer&nbsp;
-                </strong>
-                having 5+ years of industry experience in analysis, design and
-                development of Web and Mobile based solutions.
+              <h2 className="text-2xl font-bold text-purple-500 md:text-3xl">
+                About me
+              </h2>
+              <div className="my-4 text-base text-gray-400 lg:max-w-2xl md:text-lg">
+                My name is <strong>Jibi John David</strong>. I am a Software
+                Engineer having 5+ years of industry experience in analysis,
+                design and development of Web and Mobile based solutions.
                 <p className="mt-2">
                   I am motivated by vision and inspiration. I focus on ideas and
                   concepts. Having said that I find joy in turning them into
@@ -62,7 +60,7 @@ const AboutMe = () => {
             </div>
 
             <div className="mt-8 lg:mt-0 lg:w-1/3">
-              <div className="flex items-center justify-center lg:justify-end">
+              <div className="flex items-center lg:justify-end">
                 <div className="max-w-lg">
                   <Image
                     className="object-cover object-center w-full h-64 rounded-md shadow"

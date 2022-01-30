@@ -9,7 +9,7 @@ import Nav from "../components/Nav";
 export default function Home() {
   return (
     <>
-      <Header title="Welcome to my Digital Home, Great seeing you around" />
+      <Header title="Jibi John David" />
       <AboutMe />
     </>
   );

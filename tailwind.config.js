@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         dark: "#16161e",
         darker: "#111117",
+        "purple-dark": "#1f0c3c",
       },
       backgroundImage: (theme) => ({
         "header-img": "url('/images/gradient-bg.svg')",
