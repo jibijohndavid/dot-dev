@@ -26,7 +26,7 @@ const Header = ({ title, disableHero = false }: HeaderProps) => {
                 </span>
               )}
 
-              <span className="block text-white font-beyno tracking-widest">
+              <span className="mt-2 md:mt-0 block text-white font-beyno tracking-widest">
                 {title}
               </span>
             </h1>
