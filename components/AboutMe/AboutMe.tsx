@@ -27,11 +27,11 @@ const AboutMe = () => {
         <div className="container my-10 md:my-20 mx-auto">
           <div className="items-center lg:flex">
             <div className="lg:w-2/3">
-              <h2 className="text-3xl font-bold text-indigo-400">About me</h2>
+              <h2 className="text-2xl font-bold text-purple-400">About me</h2>
               <div className="my-4 text-base text-gray-500 lg:max-w-2xl">
                 My name is <strong>Jibi John David</strong>. I am a
                 passionate&nbsp;
-                <strong className="font-bold text-indigo-400">
+                <strong className="font-bold text-purple-400">
                   Software Engineer&nbsp;
                 </strong>
                 having 5+ years of industry experience in analysis, design and
@@ -66,7 +66,7 @@ const AboutMe = () => {
                 <div className="max-w-lg">
                   <Image
                     className="object-cover object-center w-full h-64 rounded-md shadow"
-                    src="https://jibi.dev/images/me.work.png"
+                    src="/images/me.png"
                     alt="Image of Jibi John David thinking"
                     height={300}
                     width={300}
